@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import StudentData from './Components/Student';
+// import StudentData from './Components/ClassComponent';
 import Welcome from './Components/1.WelcomeToReact';
 import Counter from './Components/2.Counter';
 import Greeting from './Components/3.Greeting';
@@ -18,7 +19,9 @@ import ShowHide from './Components/14.ShowHide';
 import Avatar from './Components/15.Avatar';
 import ColorChanger from './Components/16.ColorChanger';
 import TodoList from './Components/17.TodoList';
-// import StudentData from './Components/ClassComponent';
+import AppComp from './Components/18.AppComp';
+import Parent from './Components/19.Parent';
+import Container from './Components/20.Container';
 
 function App() {
   return (
@@ -41,6 +44,9 @@ function App() {
       <Avatar />
       <ColorChanger />
       <TodoList />
+      <AppComp />
+      <Parent />
+      <Container />
     </div>
   );
 }

@@ -5,8 +5,8 @@ const TodoList = ({ todos }) => {
     <div style={{ padding: '20px' }}>
       <h2>Todo List</h2>
       <ul>
-        {todos.map((todo, index) => (
-          <li key={index}>{todo}</li> // Using index as key for simplicity
+        {todos?.map((todo, index) => (
+          <li key={index}>{todo}</li>
         ))}
       </ul>
     </div>
