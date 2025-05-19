@@ -10,6 +10,14 @@ import Toggle from './Components/6.Toggle';
 import InputField from './Components/7.InputField';
 import LoginStatus from './Components/8.LoginStatus';
 import Header from './Components/9.Header';
+import Profile from './Components/10.Profile';
+import ClickCounter from './Components/11.ClickCounter';
+import Form from './Components/12.Form';
+import Clock from './Components/13.Clock';
+import ShowHide from './Components/14.ShowHide';
+import Avatar from './Components/15.Avatar';
+import ColorChanger from './Components/16.ColorChanger';
+import TodoList from './Components/17.TodoList';
 // import StudentData from './Components/ClassComponent';
 
 function App() {
@@ -25,6 +33,14 @@ function App() {
       <InputField />
       <LoginStatus />
       <Header />
+      <Profile />
+      <ClickCounter />
+      <Form />
+      <Clock />
+      <ShowHide />
+      <Avatar />
+      <ColorChanger />
+      <TodoList />
     </div>
   );
 }
