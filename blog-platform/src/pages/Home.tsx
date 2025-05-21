@@ -1,32 +1,31 @@
-import React, { useState } from 'react';
-import { Container, Typography, Button } from '@mui/material';
-import PostCard from '../components/PostCard';
+import React from 'react';
+import { Typography, Card, CardContent, Box } from '@mui/material';
 import { Post } from '../types/post';
-import { useNavigate } from 'react-router-dom';
 
-const Home: React.FC = () => {
-  const [posts] = useState<Post[]>([
-    {
-      id: 1,
-      title: 'Hello World',
-      content: 'This is the first blog post.',
-      author: 'Admin',
-      date: '2025-05-18',
-    },
-  ]);
+interface Props {
+  posts: Post[];
+}
 
-  const navigate = useNavigate();
-
+const Home: React.FC<Props> = ({ posts }) => {
   return (
-    <Container>
-      <Typography variant="h3" gutterBottom>Blog Posts</Typography>
-      <Button variant="contained" onClick={() => navigate('/create')}>
-        Create New Post
-      </Button>
-      {posts.map((post) => (
-        <PostCard key={post.id} post={post} />
-      ))}
-    </Container>
+    <Box>
+      <Typography variant="h4" gutterBottom>All Posts</Typography>
+      {posts.length === 0 ? (
+        <Typography>No posts yet.</Typography>
+      ) : (
+        posts.map((post) => (
+          <Card key={post.id} sx={{ mb: 2 }}>
+            <CardContent>
+              <Typography variant="h6">{post.title}</Typography>
+              <Typography variant="body2" color="text.secondary">
+                By {post.author} on {new Date(post.date).toLocaleString()}
+              </Typography>
+              <Typography sx={{ mt: 1 }}>{post.content}</Typography>
+            </CardContent>
+          </Card>
+        ))
+      )}
+    </Box>
   );
 };
 

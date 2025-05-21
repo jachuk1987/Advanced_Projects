@@ -2,8 +2,15 @@ import React from 'react';
 import { Container, Typography } from '@mui/material';
 import PostForm from '../components/PostForm';
 import { Post } from '../types/post';
+import { useNavigate } from 'react-router-dom';
 
-const CreatePost: React.FC = () => {
+interface Props {
+  onCreate: (post: Post) => void;
+}
+
+const CreatePost: React.FC<Props> = ({ onCreate }) => {
+  const navigate = useNavigate();
+
   const handleCreate = (data: Omit<Post, 'id' | 'date'>) => {
     const newPost: Post = {
       ...data,
@@ -11,8 +18,8 @@ const CreatePost: React.FC = () => {
       date: new Date().toISOString(),
     };
 
-    // Later: Save to backend or global state
-    console.log('New Post Created:', newPost);
+    onCreate(newPost);
+    navigate('/'); // Redirect to Home page
   };
 
   return (
