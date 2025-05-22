@@ -1,26 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Join from './components/Join';
+import Chat from './components/Chat';
 
-function App() {
+const App: React.FC = () => {
+  const [username, setUsername] = useState('');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {username ? <Chat username={username} /> : <Join onJoin={setUsername} />}
     </div>
   );
-}
+};
 
 export default App;
