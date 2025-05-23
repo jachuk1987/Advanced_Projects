@@ -1,8 +1,7 @@
+// src/Chat.tsx
 import React, { useEffect, useState } from 'react';
 import { TextField, Button, List, ListItem, Container, Typography } from '@mui/material';
-import { io, Socket } from 'socket.io-client';
-
-let socket: Socket;
+import socket from './socket'; // use central socket instance
 
 interface Props {
   username: string;
@@ -13,16 +12,16 @@ const Chat: React.FC<Props> = ({ username }) => {
   const [messages, setMessages] = useState<string[]>([]);
 
   useEffect(() => {
-    socket = io('http://localhost:4000');
-
     socket.emit('join', username);
 
-    socket.on('chat message', (msg: string) => {
+    const handleMessage = (msg: string) => {
       setMessages((prev) => [...prev, msg]);
-    });
+    };
+
+    socket.on('chat message', handleMessage);
 
     return () => {
-      socket.disconnect();
+      socket.off('chat message', handleMessage);
     };
   }, [username]);
 
@@ -38,7 +37,7 @@ const Chat: React.FC<Props> = ({ username }) => {
   return (
     <Container maxWidth="sm" sx={{ mt: 5 }}>
       <Typography variant="h5" gutterBottom>Welcome, {username}</Typography>
-      <List>
+      <List sx={{ maxHeight: 300, overflowY: 'auto', border: '1px solid #ccc', mb: 2 }}>
         {messages.map((msg, index) => (
           <ListItem key={index}>{msg}</ListItem>
         ))}
