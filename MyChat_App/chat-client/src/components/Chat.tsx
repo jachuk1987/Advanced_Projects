@@ -1,7 +1,7 @@
 // src/Chat.tsx
 import React, { useEffect, useState } from 'react';
 import { TextField, Button, List, ListItem, Container, Typography } from '@mui/material';
-import socket from './socket'; // use central socket instance
+import socket from '../socket'; // use central socket instance
 
 interface Props {
   username: string;
