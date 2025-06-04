@@ -4,8 +4,8 @@ export interface Job {
   title: string;
   company: string;
   location: string;
-  type: string;        // e.g., Full-time, Part-time
+  type: string;
   description: string;
   postedAt: string;
-  salary?: string;     // Optional, since you're using it in JobCard
+  salary?: string; // Optional
 }
