@@ -22,4 +22,4 @@ const ValidationForm = () => {
   )
 }
 
-export default ValidationForm;
+export default ValidationForm
