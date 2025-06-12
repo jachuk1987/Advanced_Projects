@@ -7,7 +7,7 @@ const ValidationForm = () => {
         email: "",
     });
 
-    function handlechange = (e) => {}
+    // function handlechange = (e) => {}
   return (
     <div>
       <form>
@@ -16,7 +16,8 @@ const ValidationForm = () => {
         <label htmlFor="">Age</label>
         <input type="text" name='lName' value={user.age}/> <br />
         <label htmlFor="">Email</label>
-        <input type="email" name='email' value={user.email}/>
+        <input type="email" name='email' value={user.email}/> <br />
+        <button>Submit</button>
       </form>
     </div>
   )
