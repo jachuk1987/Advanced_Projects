@@ -18,7 +18,7 @@ const ValidationForm = () => {
     }))
   };
 
-  useEffect(()=>{FetchData()},[])
+  useEffect(()=>{FetchData()},[]);
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -40,7 +40,7 @@ const ValidationForm = () => {
     }
 
     setError('')
-  }
+  };
 
   const createUser = async () => {
     await fetch("http://localhost:3000/Jeswanth", {
