@@ -88,7 +88,7 @@ const ValidationForm = () => {
         </tbody>
       </table>
     </div>
-  )
+  );
 };
 
 export default ValidationForm;
