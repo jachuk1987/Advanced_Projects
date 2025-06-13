@@ -16,7 +16,7 @@ const ValidationForm = () => {
     setUser((usr) => ({
       ...usr, [name]: value
     }))
-  }
+  };
 
   useEffect(()=>{FetchData()},[])
 
