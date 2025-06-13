@@ -54,7 +54,7 @@ const ValidationForm = () => {
     const response = await fetch("http://localhost:3000/Jeswanth")
     const data = await response.json()
     setListUsers(data)
-  }
+  };
 
   return (
     <div>
