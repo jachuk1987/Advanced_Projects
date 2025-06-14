@@ -11,7 +11,8 @@ const Users = () => {
             setListUsers(data.users)
         } catch (err) { console.log("Error Fetching Data", err) }
 
-    }
+    };
+    
     return (
         <div>
             <table style={{border: "1px solid blue"}}>
