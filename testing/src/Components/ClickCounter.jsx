@@ -11,6 +11,6 @@ const ClickCounter = () => {
       <p>{count}</p>
     </div>
   )
-}
+};
 
 export default ClickCounter;
