@@ -13,4 +13,4 @@ const ClickCounter = () => {
   )
 }
 
-export default ClickCounter
+export default ClickCounter;
