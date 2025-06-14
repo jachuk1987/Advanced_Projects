@@ -34,6 +34,6 @@ const Users = () => {
             </table>
         </div>
     )
-}
+};
 
 export default Users;
