@@ -11,38 +11,41 @@ const checklistData = {
 
 const CheckList = () => {
     return (
-        <div style={{ padding: "20px" }}>
-            <h2>Product Checklist</h2>
-            {Object.entries(checklistData).map(([category, items]) => (
-                <div key={category}>
-                    <h3>{category}</h3>
-                    {Array.isArray(items) ? (
-                        items.map((item) => (
-                            <div key={item}>
-                                <label>
-                                    <input type="checkbox" /> {item}
-                                </label>
-                            </div>
-                        ))
-                    ) : (
-                        Object.entries(items).map(([subCategory, subItems]) => (
-                            <div key={subCategory}>
-                                <label>
-                                    <input type="checkbox" /> {subCategory}
-                                </label>
-                                {subItems.map((subItem) => (
-                                    <div key={subItem} style={{ marginLeft: "20px" }}>
-                                        <label>
-                                            <input type="checkbox" /> {subItem}
-                                        </label>
-                                    </div>
-                                ))}
-                            </div>
-                        ))
-                    )}
-                </div>
-            ))}
+            <div style={{ padding: "20px" }}>
+      <h2>Product Checklist</h2>
+
+      {/* Iterate categories like Electronics, Books, Toys */}
+      {Object.entries(checklistData).map(([category, subItems]) => (
+        <div key={category}>
+          <h2>{category}</h2>
+
+          {/* If array (Books or Toys), render directly */}
+          {Array.isArray(subItems) ? (
+            subItems.map((item) => (
+              <div key={item} style={{ marginLeft: "20px" }}>
+                <label>
+                  <input type="checkbox" /> {item}
+                </label>
+              </div>
+            ))
+          ) : (
+            // If object (like Electronics), render each section (Mobile phones, Laptops)
+            Object.entries(subItems).map(([mainHeading, items]) => (
+              <div key={mainHeading} style={{ marginLeft: "20px" }}>
+                <h3>{mainHeading}</h3>
+                {items.map((item) => (
+                  <div key={item} style={{ marginLeft: "20px" }}>
+                    <label>
+                      <input type="checkbox" /> {item}
+                    </label>
+                  </div>
+                ))}
+              </div>
+            ))
+          )}
         </div>
+      ))}
+    </div>
     )
 }
 
