@@ -1,4 +1,4 @@
-class DomAccessClass extends React.Component {
+export class DomAccessClass extends React.Component {
   constructor(props) {
     super(props);
     this.inputRef = React.createRef(); // Create ref
