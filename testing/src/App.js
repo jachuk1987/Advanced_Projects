@@ -4,6 +4,7 @@ import Users from './Components/Users';
 import ClickCounter from './Components/ClickCounter';
 import ValidationForm from './Components/ValidationForm';
 import CheckList from './Components/CheckList';
+import Checklist1 from './Components/CheckList1';
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       <Users />
       <ClickCounter />
       <ValidationForm />
-      <CheckList />
+      {/* <CheckList /> */}
+      <Checklist1 />
     </div>
   );
 }
