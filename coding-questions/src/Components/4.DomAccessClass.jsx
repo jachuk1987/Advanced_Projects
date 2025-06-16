@@ -1,4 +1,6 @@
-export class DomAccessClass extends React.Component {
+import React from 'react';
+
+class DomAccessClass extends React.Component {
   constructor(props) {
     super(props);
     this.inputRef = React.createRef(); // Create ref
@@ -17,3 +19,5 @@ export class DomAccessClass extends React.Component {
     );
   }
 }
+
+export default DomAccessClass;
