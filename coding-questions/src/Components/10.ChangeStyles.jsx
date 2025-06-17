@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.css'; // Assuming you're using CSS classes
+import './ChangeStyles.css'; // Assuming you're using CSS classes
 
 function ChangeStyles() {
   const [isDark, setIsDark] = useState(false);
