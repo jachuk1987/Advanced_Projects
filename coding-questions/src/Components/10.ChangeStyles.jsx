@@ -1,34 +1,61 @@
 import React, { useState } from 'react';
-import './ChangeStyles.css'; // Assuming you're using CSS classes
 
 function ChangeStyles() {
   const [isDark, setIsDark] = useState(false);
   const [status, setStatus] = useState('online');
 
+  // Define inline styles
+  const headingStyle = {
+    color: isDark ? 'white' : 'black',
+    backgroundColor: isDark ? '#333' : '#eee',
+    padding: '10px',
+    borderRadius: '5px'
+  };
+
+  const statusStyle = {
+    color: status === 'online' ? 'green' : 'gray',
+    fontWeight: 'bold',
+    fontSize: '18px',
+    marginTop: '10px'
+  };
+
+  const boxStyle = {
+    backgroundColor: isDark ? '#222' : '#f9f9f9',
+    color: isDark ? 'white' : 'black',
+    padding: '10px',
+    marginTop: '10px',
+    border: '1px solid #ccc',
+    borderRadius: '5px'
+  };
+
+  const buttonStyle = {
+    marginRight: '10px',
+    padding: '8px 12px',
+    fontSize: '16px',
+    cursor: 'pointer'
+  };
+
   return (
     <div style={{ padding: '20px' }}>
-      {/* 1. Inline Style */}
-      <h2 style={{ color: isDark ? 'white' : 'black', backgroundColor: isDark ? '#333' : '#eee' }}>
+      <h2 style={headingStyle}>
         Theme is {isDark ? 'Dark' : 'Light'}
       </h2>
 
-      {/* 2. Conditional ClassName */}
-      <p className={status === 'online' ? 'online-text' : 'offline-text'}>
+      <p style={statusStyle}>
         Status: {status}
       </p>
 
-      {/* 3. Template Literal for ClassName */}
-      <div className={`box ${isDark ? 'dark-box' : 'light-box'}`}>
+      <div style={boxStyle}>
         This box changes background
       </div>
 
       <br />
 
-      {/* Toggle buttons */}
-      <button onClick={() => setIsDark(prev => !prev)}>
+      <button style={buttonStyle} onClick={() => setIsDark(prev => !prev)}>
         Toggle Theme
       </button>
-      <button onClick={() => setStatus(prev => (prev === 'online' ? 'offline' : 'online'))}>
+
+      <button style={buttonStyle} onClick={() => setStatus(prev => (prev === 'online' ? 'offline' : 'online'))}>
         Toggle Status
       </button>
     </div>
