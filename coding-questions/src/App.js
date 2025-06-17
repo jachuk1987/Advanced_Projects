@@ -15,7 +15,7 @@ function App() {
       <DomAccessExample />
       <DomAccessClass />
       <ChangeStyles />
-      <ToggleComponent 
+      <ToggleComponent />
     </div>
   );
 }
