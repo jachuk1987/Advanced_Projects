@@ -1,21 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import DisplayDynamicData from './Components/1.DisplayDynamicData';
 import ParentComponent from './Components/2.ParentComponent';
-import ChildComponent from './Components/2.ChildComponent';
-import DomAccessExample from './Components/4.DomAccessExample';
-import DomAccessClass from './Components/4.DomAccessClass';
-import ChangeStyles from './Components/10.ChangeStyles';
-import ToggleComponent from './Components/11.Show&Hide';
+import ParentCompo from './Components/3.ParentCompo';
 
 function App() {
   return (
     <div className="App">
+      <DisplayDynamicData />
       {/* <ParentComponent /> */}
-      <ChildComponent />
-      <DomAccessExample />
-      <DomAccessClass />
-      <ChangeStyles />
-      <ToggleComponent />
+      <ParentCompo />
     </div>
   );
 }

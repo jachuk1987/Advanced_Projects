@@ -1,8 +1,8 @@
 // ParentComponent.js
 import React, { useState } from 'react';
-import Table from './2.Table';
+import ChildCompo from './3.ChildCompo';
 
-const ParentComponent = () => {
+const ParentCompo = () => {
   const users = [
   {
     name: "Aarav Patel",
@@ -66,11 +66,17 @@ const ParentComponent = () => {
   }
 ];
 
+const [data, setData] = useState([]);
+
+const arrayData = () => {
+
+}
+
   return (
     <div>
-      <Table users={users}/>
+      <ChildCompo users={users}/>
     </div>
   );
 };
 
-export default ParentComponent;
+export default ParentCompo;
