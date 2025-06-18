@@ -5,6 +5,7 @@ import ParentComponent from './Components/2.ParentComponent';
 import ParentCompo from './Components/3.ParentCompo';
 import Main from './30.ContextAPI/Main';
 import CustomHook from './Components/37.CustomHook';
+import Dummy from './Components/37.Dummy';
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       <ParentComponent />
       <ParentCompo />
       <Main />
-      <CustomHook />
+      {/* <CustomHook /> */}
+      <Dummy />
     </div>
   );
 }
