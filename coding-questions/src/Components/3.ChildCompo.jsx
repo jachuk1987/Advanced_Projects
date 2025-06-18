@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const ChildCompo = ({ users }) => {
     const names = [
@@ -7,12 +7,11 @@ const ChildCompo = ({ users }) => {
         "Ravi Kumar",
         "Priya Mehta",
         "Arun Das",
-        "Sneha Reddy",
-        "Vikram Singh",
-        "Neha Verma",
-        "Amit Joshi",
-        "Divya Nair"
     ];
+
+    useEffect(() => {
+        
+    })
 
     return (
         <div>
