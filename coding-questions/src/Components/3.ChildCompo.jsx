@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-const ChildCompo = ({ users }) => {
+const ChildCompo = ({ users, arrayData }) => {
     const names = [
         "Jeswanth K",
         "Anjali Sharma",
@@ -10,8 +10,8 @@ const ChildCompo = ({ users }) => {
     ];
 
     useEffect(() => {
-        
-    })
+        arrayData(names)
+    },[names]);
 
     return (
         <div>

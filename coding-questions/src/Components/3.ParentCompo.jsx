@@ -39,13 +39,18 @@ const ParentCompo = () => {
 
 const [data, setData] = useState([]);
 
-const arrayData = () => {
-
+const arrayData = (datafromchild) => {
+    setData(datafromchild)
 }
 
   return (
     <div>
       <ChildCompo users={users} arrayData={arrayData} />
+      {data.map((val, index) => (
+        <ul key={index}>
+            <li>{val}</li>
+        </ul>
+      ))}
     </div>
   );
 };
