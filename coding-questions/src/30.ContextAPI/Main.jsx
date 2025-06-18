@@ -1,12 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import GrandParent from './GrandParent';
+import { UserContextInfoProvider } from './UserContext';
 
 const Main = () => {
-  return (
-    <div style={{width: "900px", height: "600px", border: "2px solid blue" , margin: "auto"}}>
-      <GrandParent />
-    </div>
-  )
+    const [fruits, setFruits] = useState([
+        "Apple",
+        "Orange",
+        "Grapes",
+        "Pineapple",
+        "Strawberry",
+        "Watermelon",
+    ])
+
+    return (
+        <div style={{ width: "900px", height: "660px", border: "2px solid blue", margin: "auto" }}>
+            <UserContextInfoProvider value={fruits} >
+                <GrandParent />
+            </UserContextInfoProvider>
+            
+        </div>
+    )
 }
 
 export default Main;
