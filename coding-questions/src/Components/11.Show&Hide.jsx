@@ -1,6 +1,6 @@
 // import React, { useState } from 'react';
 
-// function ShowHide() {
+// function ShowAndHide() {
 //   const [show, setShow] = useState(false);
 //   return (
 //     <div>
@@ -13,10 +13,10 @@
 //   );
 // }
 
-// export default ShowHide;
+// export default ShowAndHide;
 
 import React, { useState } from 'react';
-const ShowHide = () => {
+const ShowAndHide = () => {
     const [isVisible, setIsVisible] = useState(false)
   return (
     <div>
@@ -32,4 +32,4 @@ const ShowHide = () => {
   )
 }
 
-export default ShowHide;
+export default ShowAndHide;
