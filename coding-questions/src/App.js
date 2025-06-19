@@ -3,8 +3,8 @@ import './App.css';
 import DisplayDynamicData from './Components/1.DisplayDynamicData';
 import ParentComponent from './Components/2.ParentComponent';
 import ParentCompo from './Components/3.ParentCompo';
+import ShowHide from './Components/11.Show&Hide';
 import Main from './30.ContextAPI/Main';
-import CustomHook from './Components/37.CustomHook';
 import Dummy from './Components/37.Dummy';
 
 function App() {
@@ -13,8 +13,8 @@ function App() {
       <DisplayDynamicData />
       <ParentComponent />
       <ParentCompo />
+      <ShowHide />
       <Main />
-      {/* <CustomHook /> */}
       <Dummy />
     </div>
   );

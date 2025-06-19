@@ -1,8 +1,7 @@
 // import React, { useState } from 'react';
 
-// function ToggleComponent() {
+// function ShowHide() {
 //   const [show, setShow] = useState(false);
-
 //   return (
 //     <div>
 //       <button onClick={() => setShow(prev => !prev)}>
@@ -14,9 +13,10 @@
 //   );
 // }
 
-// export default ToggleComponent;
+// export default ShowHide;
 
-const HideData = () => {
+import React, { useState } from 'react';
+const ShowHide = () => {
     const [isVisible, setIsVisible] = useState(false)
   return (
     <div>
@@ -32,4 +32,4 @@ const HideData = () => {
   )
 }
 
-export default HideData;
+export default ShowHide;
