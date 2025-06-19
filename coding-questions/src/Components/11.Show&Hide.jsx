@@ -1,17 +1,35 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 
-function ToggleComponent() {
-  const [show, setShow] = useState(false);
+// function ToggleComponent() {
+//   const [show, setShow] = useState(false);
 
+//   return (
+//     <div>
+//       <button onClick={() => setShow(prev => !prev)}>
+//         {show ? 'Hide' : 'Show'} Message
+//       </button>
+
+//       {show && <p>This message is conditionally shown</p>}
+//     </div>
+//   );
+// }
+
+// export default ToggleComponent;
+
+const HideData = () => {
+    const [isVisible, setIsVisible] = useState(false)
   return (
     <div>
-      <button onClick={() => setShow(prev => !prev)}>
-        {show ? 'Hide' : 'Show'} Message
-      </button>
+        <button onClick={()=>{setIsVisible(!isVisible)}}>{isVisible ? "Hide" : "Show"}</button>
 
-      {show && <p>This message is conditionally shown</p>}
+        {isVisible && (
+            <div>
+                <p>Secret Data</p>
+                <p>This is the data shown conditionally based on the button click</p>
+            </div>
+        )}
     </div>
-  );
+  )
 }
 
-export default ToggleComponent;
+export default HideData;
