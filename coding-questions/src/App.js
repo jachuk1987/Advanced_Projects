@@ -23,6 +23,6 @@ function App() {
       <Dummy />
     </div>
   );
-}
+};
 
 export default App;
