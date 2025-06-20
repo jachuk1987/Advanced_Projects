@@ -17,6 +17,6 @@ const RadioButton = () => {
       <p>Selected: {selectColor}</p>
     </div>
   )
-}
+};
 
 export default RadioButton;
