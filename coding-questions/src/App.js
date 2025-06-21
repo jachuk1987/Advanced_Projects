@@ -18,7 +18,7 @@ function App() {
       <ControlledUsers />
       <DisplayDynamicData />
       <ParentComponent />
-      <ParentCompo />
+      {/* <ParentCompo /> */}
       <ShowAndHide />
       <RadioButton />
       <Main />

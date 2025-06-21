@@ -52,7 +52,7 @@ const User = () => {
             <label htmlFor=""><input type="radio" name='gender' value='male' checked={user.gender === "male"} onChange={handlechange} />Male</label><br />
             <label htmlFor=""><input type="radio" name='gender' value='female' checked={user.gender === "female"} onChange={handlechange} />Female</label><br />
             <label htmlFor=""><input type="radio" name='gender' value='trance' checked={user.gender === "trance"} onChange={handlechange} />Trance</label><br /><br />
-            <label htmlFor="">Opinian</label><br /><br />
+            <label htmlFor="">Opinion</label><br /><br />
             <label htmlFor=""><input type="radio" name='option' value='yes' checked={user.option === "yes"} onChange={handlechange} />Yes</label><br />
             <label htmlFor=""><input type="radio" name='option' value='no' checked={user.option === 'no'} onChange={handlechange} />No</label><br />
             <label htmlFor="">Select</label>
