@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import UserInput from './Components/UserInput';
+import ControlledUsers from './Components/ControlledUsers';
 import DisplayDynamicData from './Components/1.DisplayDynamicData';
 import ParentComponent from './Components/2.ParentComponent';
 import ParentCompo from './Components/3.ParentCompo';
@@ -14,6 +15,7 @@ function App() {
   return (
     <div className="App">
       <UserInput />
+      <ControlledUsers />
       <DisplayDynamicData />
       <ParentComponent />
       <ParentCompo />
