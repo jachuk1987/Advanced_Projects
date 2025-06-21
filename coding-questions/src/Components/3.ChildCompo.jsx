@@ -11,7 +11,7 @@ const ChildCompo = ({ users, arrayData }) => {
 
     useEffect(() => {
         arrayData(names)
-    },[names]);
+    }, [names]);
 
     return (
         <div>
