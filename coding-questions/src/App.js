@@ -10,12 +10,14 @@ import ShowAndHide from './Components/11.ShowAndHide';
 import RadioButton from './Components/13.RadioButton';
 import Main from './30.ContextAPI/Main';
 import Dummy from './Components/37.Dummy';
+import User from './Components/User';
 
 function App() {
   return (
     <div className="App">
       <UserInput />
       <ControlledUsers />
+      <User />
       <DisplayDynamicData />
       <ParentComponent />
       {/* <ParentCompo /> */}
