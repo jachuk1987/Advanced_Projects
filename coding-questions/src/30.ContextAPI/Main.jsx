@@ -13,7 +13,7 @@ const Main = () => {
     ])
 
     return (
-        <div style={{ width: "900px", height: "660px", border: "2px solid blue", margin: "auto" }}>
+        <div style={{ width: "900px", height: "660px", border: "2px solid blue", margin: "auto", backgroundColor:"blueviolet" }}>
             <UserContextInfoProvider value={fruits} >
                 <GrandParent />
             </UserContextInfoProvider>
