@@ -12,6 +12,7 @@ import RadioButton from './Components/13.RadioButton';
 import Main from './30.ContextAPI/Main';
 import Dummy from './Components/37.Dummy';
 import ArrayOfObject from './Components/8.ArrayofObject';
+import SearchInput from './Components/19.SearchFilter';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <ArrayOfObject />
       <ShowAndHide />
       <RadioButton />
+      <SearchInput />
       <Main />
       <Dummy />
     </div>
