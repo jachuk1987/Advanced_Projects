@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import UserInput from './Components/UserInput';
+import User from './Components/User';
 import ControlledUsers from './Components/ControlledUsers';
 import DisplayDynamicData from './Components/1.DisplayDynamicData';
 import ParentComponent from './Components/2.ParentComponent';
@@ -10,7 +11,7 @@ import ShowAndHide from './Components/11.ShowAndHide';
 import RadioButton from './Components/13.RadioButton';
 import Main from './30.ContextAPI/Main';
 import Dummy from './Components/37.Dummy';
-import User from './Components/User';
+import ArrayOfObject from './Components/8.ArrayofObject';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <DisplayDynamicData />
       <ParentComponent />
       {/* <ParentCompo /> */}
+      <ArrayOfObject />
       <ShowAndHide />
       <RadioButton />
       <Main />
