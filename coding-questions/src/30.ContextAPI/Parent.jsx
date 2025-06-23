@@ -5,7 +5,7 @@ const Parent = () => {
     return (
         <>
             <h6>I am from Parent</h6>
-            <div style={{ width: "700px", height: "420px", border: "2px solid blue", margin: "auto" }}>
+            <div style={{ width: "700px", height: "420px", border: "2px solid blue", margin: "auto", backgroundColor:"lightblue" }}>
                 <Child />
             </div>
         </>
