@@ -5,7 +5,7 @@ const GrandChild = () => {
   return (
     <>
     <h6>I am from Grand Child</h6>
-    <div style={{width: "500px", height: "180px", border: "2px solid blue" , margin: "auto"}}>
+    <div style={{width: "500px", height: "180px", border: "2px solid blue" , margin: "auto", backgroundColor:"lightseagreen"}}>
       <UserContextInfoConsumer>
         {(data)=>(
             <ul>
