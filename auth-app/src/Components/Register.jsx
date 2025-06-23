@@ -12,11 +12,20 @@ const Register = () => {
     confirmPassword: "",
   });
   const [users, setUsers] = useState([]);
+
+  // const handleChange = (e) => {
+  //   const newUser = { ...user };
+  //   newUser[e.target.name] = e.target.value;
+  //   setUser(newUser);
+  // };
+
   const handleChange = (e) => {
-    const newUser = { ...user };
-    newUser[e.target.name] = e.target.value;
-    setUser(newUser);
-  };
+    const {name, value} = e.target
+
+    setUser((prev) => ({
+      ...prev, [name]: value
+    }))
+  }
 
   const handleSubmit = () => {
     const newUsers = JSON.parse(localStorage.getItem("users"));
