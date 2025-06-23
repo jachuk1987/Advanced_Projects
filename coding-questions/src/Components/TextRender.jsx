@@ -10,4 +10,4 @@ const TextRender = () => {
   );
 };
 
-export default TextRender
+export default TextRender;
