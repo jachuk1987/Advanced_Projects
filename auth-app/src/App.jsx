@@ -1,5 +1,4 @@
 import { useState } from "react";
-// import "./App.css";
 import { BrowserRouter, Router, Routes, Route } from "react-router-dom";
 import { lazy } from "react";
 import { Suspense } from "react";
