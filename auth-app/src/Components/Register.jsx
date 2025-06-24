@@ -23,17 +23,27 @@ const Register = () => {
     }))
   };
 
-  const handleSubmit = () => {
-    const newUsers = JSON.parse(localStorage.getItem("users"));
-    if (newUsers !== null) {
-      newUsers.push(user);
-      localStorage.setItem("users", JSON.stringify(newUsers));
-    } else {
-      localStorage.setItem("users", JSON.stringify([user]));
-    }
+  const saveLocalStorage = () => {
+    const updateUsers = [...users, user]
+    localStorage.setItem("newUsers", JSON.stringify(updateUsers))
+    setUsers(updateUsers)
+  }
 
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    saveLocalStorage()
     // redirect to Login page
     navigate("login");
+    
+    // const newUsers = JSON.parse(localStorage.getItem("users"));
+    // if (newUsers !== null) {
+    //   newUsers.push(user);
+    //   localStorage.setItem("users", JSON.stringify(newUsers));
+    // } else {
+    //   localStorage.setItem("users", JSON.stringify([user]));
+    // }
+
+    
   };
   return (
     <div>
