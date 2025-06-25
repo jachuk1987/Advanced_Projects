@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const ArrayOfObject = () => {
+const ArrayOfArray = () => {
   const Optionslist = ["React", "Next.js", "Angular"];
 
   const [selected, setSelected] = useState("")
@@ -19,4 +19,4 @@ const ArrayOfObject = () => {
   )
 };
 
-export default ArrayOfObject;
+export default ArrayOfArray;
