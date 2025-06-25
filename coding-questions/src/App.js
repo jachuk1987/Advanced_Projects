@@ -13,6 +13,7 @@ import Main from './30.ContextAPI/Main';
 import Dummy from './Components/37.Dummy';
 import ArrayOfObject from './Components/8.ArrayofObject';
 import SearchInput from './Components/19.SearchFilter';
+import PaginationComponents from './Components/40.Pagination';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       <SearchInput />
       <Main />
       <Dummy />
+      <PaginationComponents />
     </div>
   );
 };
