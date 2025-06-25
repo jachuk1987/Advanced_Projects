@@ -6,6 +6,6 @@ const ArrayOfObjects = () => {
       
     </div>
   )
-}
+};
 
 export default ArrayOfObjects;
