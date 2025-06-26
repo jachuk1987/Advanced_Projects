@@ -11,6 +11,7 @@ import ArrayOfArray from './Components/8.ArrayofArray';
 import ArrayOfObjects from './Components/8.ArrayOfObjects';
 import ShowAndHide from './Components/11.ShowAndHide';
 import RadioArray from './Components/12.RadioArray';
+import RadioObjectArray from './Components/12.RadioObjectArray';
 import RadioButton from './Components/13.RadioButton';
 import Main from './30.ContextAPI/Main';
 import Dummy from './Components/37.Dummy';
@@ -30,6 +31,7 @@ function App() {
       <ArrayOfObjects />
       <ShowAndHide />
       <RadioArray />
+      <RadioObjectArray />
       <RadioButton />
       <SearchInput />
       <Main />
