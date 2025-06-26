@@ -15,6 +15,7 @@ import Main from './30.ContextAPI/Main';
 import Dummy from './Components/37.Dummy';
 import SearchInput from './Components/19.SearchFilter';
 import PaginationComponents from './Components/40.Pagination';
+import RadioArray from './Components/12.RadioArray';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
       <ArrayOfArray />
       <ArrayOfObjects />
       <ShowAndHide />
+      <RadioArray />
       <RadioButton />
       <SearchInput />
       <Main />
