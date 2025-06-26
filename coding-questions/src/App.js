@@ -14,6 +14,7 @@ import Dummy from './Components/37.Dummy';
 import ArrayOfArray from './Components/8.ArrayofArray';
 import SearchInput from './Components/19.SearchFilter';
 import PaginationComponents from './Components/40.Pagination';
+import ArrayOfObjects from './Components/8.ArrayOfObjects';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <ParentComponent />
       {/* <ParentCompo /> */}
       <ArrayOfArray />
+      <ArrayOfObjects
       <ShowAndHide />
       <RadioButton />
       <SearchInput />
