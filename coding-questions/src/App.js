@@ -13,11 +13,12 @@ import ShowAndHide from './Components/11.ShowAndHide';
 import RadioArray from './Components/12.RadioArray';
 import RadioObjectArray from './Components/12.RadioObjectArray';
 import RadioButton from './Components/13.RadioButton';
+import SearchInput from './Components/19.SearchFilter';
+import CounterWithUseState from './Components/20.CounterUseState';
+import CounterWithReducer from './Components/21.CounterUseReducer';
 import Main from './30.ContextAPI/Main';
 import Dummy from './Components/37.Dummy';
-import SearchInput from './Components/19.SearchFilter';
 import PaginationComponents from './Components/40.Pagination';
-import Counter from './Components/20.CounterUseState';
 
 function App() {
   return (
@@ -35,7 +36,8 @@ function App() {
       <RadioObjectArray />
       <RadioButton />
       <SearchInput />
-      <Counter />
+      <CounterWithUseState />
+      <CounterWithReducer />
       <Main />
       <Dummy />
       <PaginationComponents />
