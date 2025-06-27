@@ -13,6 +13,7 @@ import ShowAndHide from './Components/11.ShowAndHide';
 import RadioArray from './Components/12.RadioArray';
 import RadioObjectArray from './Components/12.RadioObjectArray';
 import RadioButton from './Components/13.RadioButton';
+import AddToArray from './Components/18.AddToArray';
 import SearchInput from './Components/19.SearchFilter';
 import CounterWithUseState from './Components/20.CounterUseState';
 import CounterWithReducer from './Components/21.CounterUseReducer';
@@ -35,6 +36,7 @@ function App() {
       <RadioArray />
       <RadioObjectArray />
       <RadioButton />
+      <AddToArray />
       <SearchInput />
       <CounterWithUseState />
       <CounterWithReducer />
