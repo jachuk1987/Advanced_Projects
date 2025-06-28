@@ -7,6 +7,7 @@ import ControlledUsers from './Components/ControlledUsers';
 import DisplayDynamicData from './Components/1.DisplayDynamicData';
 import ParentComponent from './Components/2.ParentComponent';
 import ParentCompo from './Components/3.ParentCompo';
+import MirrorTextbox from './Components/7.MirrorTextbox';
 import ArrayOfArray from './Components/8.ArrayofArray';
 import ArrayOfObjects from './Components/8.ArrayOfObjects';
 import ShowAndHide from './Components/11.ShowAndHide';
@@ -20,7 +21,7 @@ import CounterWithReducer from './Components/21.CounterUseReducer';
 import Main from './30.ContextAPI/Main';
 import Dummy from './Components/37.Dummy';
 import PaginationComponents from './Components/40.Pagination';
-import MirrorTextbox from './Components/7.MirrorTextbox';
+import MyComponent from './Components/14.MyComponent';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
       <RadioArray />
       <RadioObjectArray />
       <RadioButton />
+      <MyComponent />
       <AddToArray />
       <SearchInput />
       <CounterWithUseState />
