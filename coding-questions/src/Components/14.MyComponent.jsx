@@ -12,7 +12,8 @@ const MyComponent = () => {
         const response = await fetch('https://jsonplaceholder.typicode.com/users/1');
         const data = await response.json();
         setUser(data);
-      } catch (error) {
+      } 
+      catch (error) {
         console.error('Failed to fetch user:', error);
       }
     };
