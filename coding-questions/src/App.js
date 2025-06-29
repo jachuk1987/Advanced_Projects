@@ -14,6 +14,7 @@ import ShowAndHide from './Components/11.ShowAndHide';
 import RadioArray from './Components/12.RadioArray';
 import RadioObjectArray from './Components/12.RadioObjectArray';
 import RadioButton from './Components/13.RadioButton';
+import MyComponent from './Components/14.MyComponent';
 import AddToArray from './Components/18.AddToArray';
 import SearchInput from './Components/19.SearchFilter';
 import CounterWithUseState from './Components/20.CounterUseState';
@@ -21,7 +22,6 @@ import CounterWithReducer from './Components/21.CounterUseReducer';
 import Main from './30.ContextAPI/Main';
 import Dummy from './Components/37.Dummy';
 import PaginationComponents from './Components/40.Pagination';
-import MyComponent from './Components/14.MyComponent';
 
 function App() {
   return (
