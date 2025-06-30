@@ -1,6 +1,6 @@
 import React from 'react'
 
-const 16.ReRender = () => {
+const ReRender = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const 16.ReRender = () => {
   )
 }
 
-export default 16.ReRender
+export default ReRender
