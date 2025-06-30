@@ -8,4 +8,4 @@ const ReRender = () => {
   )
 }
 
-export default ReRender
+export default ReRender;
