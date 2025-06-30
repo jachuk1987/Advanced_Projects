@@ -23,6 +23,7 @@ import CounterWithReducer from './Components/21.CounterUseReducer';
 import Main from './30.ContextAPI/Main';
 import Dummy from './Components/37.Dummy';
 import PaginationComponents from './Components/40.Pagination';
+import ReRenderExample from './Components/16.ReRender';
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
       <RadioButton />
       <MyComponent />
       <DisplayObject />
+      <ReRenderExample />
       <AddToArray />
       <SearchInput />
       <CounterWithUseState />
