@@ -8,4 +8,4 @@ const CallOnEveryRender = () => {
   )
 }
 
-export default CallOnEveryRender
+export default CallOnEveryRender;
