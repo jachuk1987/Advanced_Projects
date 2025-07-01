@@ -18,7 +18,6 @@ import MyComponent from './Components/14.MyComponent';
 import DisplayObject from './Components/15.DisplayObjects';
 import ReRenderExample from './Components/16.ReRender';
 import CallOnEveryRender from './Components/17.CallOnEveryRender';
-
 import AddToArray from './Components/18.AddToArray';
 import SearchInput from './Components/19.SearchFilter';
 import CounterWithUseState from './Components/20.CounterUseState';
