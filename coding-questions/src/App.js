@@ -8,7 +8,6 @@ import DisplayDynamicData from './Components/1.DisplayDynamicData';
 import ParentComponent from './Components/2.ParentComponent';
 import ParentCompo from './Components/3.ParentCompo';
 import ArrayDropdown from './Components/5.ArrayDropdown';
-
 import MirrorTextbox from './Components/7.MirrorTextbox';
 import ArrayOfArray from './Components/8.ArrayofArray';
 import ArrayOfObjects from './Components/8.ArrayOfObjects';
@@ -27,6 +26,7 @@ import CounterWithReducer from './Components/21.CounterUseReducer';
 import Main from './30.ContextAPI/Main';
 import Dummy from './Components/37.Dummy';
 import PaginationComponents from './Components/40.Pagination';
+import ObjectArrayDropdown from './Components/5.ObjectArrayDropdown';
 
 function App() {
   return (
@@ -38,6 +38,7 @@ function App() {
       <ParentComponent />
       {/* <ParentCompo /> */}
       <ArrayDropdown />
+      <ObjectArrayDropdown />
       <MirrorTextbox />
       <ArrayOfArray />
       <ArrayOfObjects />
