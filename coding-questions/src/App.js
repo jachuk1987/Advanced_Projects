@@ -25,7 +25,6 @@ import CounterWithReducer from './Components/21.CounterUseReducer';
 import Main from './30.ContextAPI/Main';
 import Dummy from './Components/37.Dummy';
 import PaginationComponents from './Components/40.Pagination';
-import ArrayDropdown from './Components/5.ArrayDropdown';
 
 function App() {
   return (
