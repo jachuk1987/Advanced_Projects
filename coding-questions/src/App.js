@@ -8,6 +8,8 @@ import DisplayDynamicData from './Components/1.DisplayDynamicData';
 import ParentComponent from './Components/2.ParentComponent';
 import ParentCompo from './Components/3.ParentCompo';
 import ArrayDropdown from './Components/5.ArrayDropdown';
+import ObjectArrayDropdown from './Components/5.ObjectArrayDropdown';
+
 import MirrorTextbox from './Components/7.MirrorTextbox';
 import ArrayOfArray from './Components/8.ArrayofArray';
 import ArrayOfObjects from './Components/8.ArrayOfObjects';
